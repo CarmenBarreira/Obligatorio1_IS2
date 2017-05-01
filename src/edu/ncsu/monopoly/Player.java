@@ -1,5 +1,6 @@
 package edu.ncsu.monopoly;
 
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -11,6 +12,7 @@ public class Player {
 	private boolean inJail;
 	private int money;
 	private String name;
+	private Color fichaColor;
 
 	private Cell position;
 	private ArrayList properties = new ArrayList();
@@ -92,6 +94,14 @@ public class Player {
 
 	public int getMoney() {
 		return this.money;
+	}
+	
+	public Color getFichaColor() {
+		return this.fichaColor;
+	}
+	
+	public void setFichaColor(Color chipColor) {
+		this.fichaColor = chipColor;
 	}
 	
 	public String[] getMonopolies() {
