@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package edu.ncsu.monopoly.gui;
 
 import edu.ncsu.monopoly.PlayerRecord;
@@ -18,14 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class WelcomeWindow extends javax.swing.JFrame implements Observer {
 
-    PlayerRecord play;
 
-    /**
-     * Creates new form WelcomeWindow
-     *
-     * @param elPlay
-     * @throws java.lang.ClassNotFoundException
-     */
     public WelcomeWindow(PlayerRecord elPlay) throws ClassNotFoundException {
 
         initComponents();
@@ -43,7 +32,7 @@ public class WelcomeWindow extends javax.swing.JFrame implements Observer {
             @Override
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 try {
-                    play.persistirGuardar(play);
+                    elPlay.persistirGuardar(play);
 
                 } catch (IOException ex) {
                 }
@@ -70,7 +59,7 @@ public class WelcomeWindow extends javax.swing.JFrame implements Observer {
         btnPlayers = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFont(new java.awt.Font("Monopoly", 0, 10)); // NOI18N
         setMaximumSize(new java.awt.Dimension(746, 477));
         setMinimumSize(new java.awt.Dimension(746, 477));
@@ -134,7 +123,6 @@ public class WelcomeWindow extends javax.swing.JFrame implements Observer {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         try {
-
             play.persistirGuardar(play);
             close();
         } catch (IOException ex) {
@@ -161,7 +149,7 @@ public class WelcomeWindow extends javax.swing.JFrame implements Observer {
         }
     }
 
-
+    private PlayerRecord play;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnPlay;

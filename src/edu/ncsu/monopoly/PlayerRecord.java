@@ -8,10 +8,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Observable;
 
-public class PlayerRecord extends Observable {
+public class PlayerRecord extends Observable implements Serializable{
 
     private ArrayList<User> users = new ArrayList<>();
 

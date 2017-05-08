@@ -5,22 +5,16 @@
  */
 package edu.ncsu.monopoly.gui;
 
-import edu.ncsu.monopoly.Player;
 import edu.ncsu.monopoly.PlayerRecord;
 import edu.ncsu.monopoly.User;
 import java.awt.Color;
 import java.awt.Image;
-import java.awt.Label;
 import java.io.File;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
-import javax.swing.JPanel;
 
 /**
  *
@@ -100,7 +94,7 @@ public class NewPlayer extends javax.swing.JFrame {
 
         jLabel1.setText("Name:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(90, 100, 36, 16);
+        jLabel1.setBounds(90, 100, 31, 14);
 
         txtName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,7 +102,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtName);
-        txtName.setBounds(150, 100, 156, 24);
+        txtName.setBounds(150, 100, 156, 20);
 
         jLabel2.setText("Color:");
         getContentPane().add(jLabel2);
@@ -116,7 +110,7 @@ public class NewPlayer extends javax.swing.JFrame {
 
         jLabel3.setText("Photo:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(90, 230, 36, 16);
+        jLabel3.setBounds(90, 230, 32, 14);
 
         btnPhoto.setText("Upload");
         btnPhoto.addActionListener(new java.awt.event.ActionListener() {
@@ -125,7 +119,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnPhoto);
-        btnPhoto.setBounds(150, 220, 150, 32);
+        btnPhoto.setBounds(150, 220, 150, 23);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/newPlayer.png"))); // NOI18N
@@ -139,7 +133,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(yellowColor);
-        yellowColor.setBounds(150, 130, 30, 31);
+        yellowColor.setBounds(150, 130, 33, 31);
 
         redColor.setBackground(new java.awt.Color(255, 51, 51));
         redColor.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +142,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(redColor);
-        redColor.setBounds(190, 130, 30, 31);
+        redColor.setBounds(190, 130, 33, 31);
 
         greenColor.setBackground(java.awt.Color.green);
         greenColor.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +151,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(greenColor);
-        greenColor.setBounds(230, 130, 30, 31);
+        greenColor.setBounds(230, 130, 33, 31);
 
         pinkColor.setBackground(java.awt.Color.magenta);
         pinkColor.addActionListener(new java.awt.event.ActionListener() {
@@ -166,7 +160,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(pinkColor);
-        pinkColor.setBounds(280, 130, 30, 31);
+        pinkColor.setBounds(280, 130, 33, 31);
 
         blueColor.setBackground(java.awt.Color.blue);
         blueColor.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +169,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(blueColor);
-        blueColor.setBounds(150, 170, 30, 31);
+        blueColor.setBounds(150, 170, 33, 31);
 
         cyanColor.setBackground(java.awt.Color.cyan);
         cyanColor.addActionListener(new java.awt.event.ActionListener() {
@@ -184,7 +178,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cyanColor);
-        cyanColor.setBounds(190, 170, 30, 31);
+        cyanColor.setBounds(190, 170, 33, 31);
 
         orangeColor.setBackground(java.awt.Color.orange);
         orangeColor.addActionListener(new java.awt.event.ActionListener() {
@@ -193,7 +187,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(orangeColor);
-        orangeColor.setBounds(230, 170, 30, 31);
+        orangeColor.setBounds(230, 170, 33, 31);
 
         greyColor.setBackground(java.awt.Color.darkGray);
         greyColor.addActionListener(new java.awt.event.ActionListener() {
@@ -202,7 +196,7 @@ public class NewPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(greyColor);
-        greyColor.setBounds(280, 170, 30, 31);
+        greyColor.setBounds(280, 170, 33, 31);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

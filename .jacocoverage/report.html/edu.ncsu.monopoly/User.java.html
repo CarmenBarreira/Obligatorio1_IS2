@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>User.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Obli1_IS2&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">edu.ncsu.monopoly</a> &gt; <span class="el_source">User.java</span></div><h1>User.java</h1><pre class="source lang-java linenums">package edu.ncsu.monopoly;
+
+import java.awt.Color;
+
+public class User {
+	private String name; 
+	private String photo; 
+	private int gamesPlayed; 
+	private int gamesWon;
+        private  Color chipColor;
+	
+<span class="nc" id="L12">	public User(){</span>
+<span class="nc" id="L13">		name = &quot;Sin nombre&quot;;</span>
+<span class="nc" id="L14">		photo = &quot;&quot;;</span>
+<span class="nc" id="L15">		gamesPlayed = 0;</span>
+<span class="nc" id="L16">		gamesWon = 0;</span>
+<span class="nc" id="L17">                chipColor = Color.BLACK;</span>
+<span class="nc" id="L18">	}</span>
+        
+<span class="nc" id="L20">        	public User(String nombre){</span>
+<span class="nc" id="L21">		name = nombre;</span>
+<span class="nc" id="L22">		photo = &quot;&quot;;</span>
+<span class="nc" id="L23">		gamesPlayed = 0;</span>
+<span class="nc" id="L24">		gamesWon = 0;</span>
+<span class="nc" id="L25">                chipColor = Color.BLACK;</span>
+<span class="nc" id="L26">	}</span>
+        
+<span class="nc" id="L28">        public User(String nameParam, Color playerColor, String strPhoto){</span>
+<span class="nc" id="L29">		name = nameParam;</span>
+<span class="nc" id="L30">		gamesPlayed = 0;</span>
+<span class="nc" id="L31">		gamesWon = 0;</span>
+<span class="nc" id="L32">                photo= strPhoto;</span>
+<span class="nc" id="L33">                chipColor=playerColor;</span>
+                
+<span class="nc" id="L35">	}</span>
+
+	
+	public String getName(){
+<span class="nc" id="L39">		return name;</span>
+	}
+	
+	public String getPhoto(){
+<span class="nc" id="L43">		return photo;</span>
+	}
+        
+        public Color getChipColor(){
+<span class="nc" id="L47">		return chipColor;</span>
+	}
+	
+	public void setChipColor(Color chip){
+<span class="nc" id="L51">		chipColor= chip;</span>
+<span class="nc" id="L52">	}</span>
+	
+	public int getGamesPlayed(){
+<span class="nc" id="L55">		return gamesPlayed;</span>
+	}
+	
+	public int getGamesWon(){
+<span class="nc" id="L59">		return gamesWon;</span>
+	}
+	
+	public void setName (String newName){
+<span class="nc" id="L63">		name = newName;</span>
+<span class="nc" id="L64">	}</span>
+	
+	public void setPhoto (String newPhoto){
+<span class="nc" id="L67">		photo = newPhoto;	</span>
+<span class="nc" id="L68">	}</span>
+
+
+    public void setGamesPlayed(int gamesPlayed) {
+<span class="nc" id="L72">        this.gamesPlayed = gamesPlayed;</span>
+<span class="nc" id="L73">    }</span>
+
+
+    public void setGamesWon(int gamesWon) {
+<span class="nc" id="L77">        this.gamesWon = gamesWon;</span>
+<span class="nc" id="L78">    }</span>
+	
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>

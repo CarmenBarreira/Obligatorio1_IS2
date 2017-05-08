@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ArchivoLectura.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Obli1_IS2&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">archivo</a> &gt; <span class="el_source">ArchivoLectura.java</span></div><h1>ArchivoLectura.java</h1><pre class="source lang-java linenums">package archivo;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+<span class="nc" id="L9">public class ArchivoLectura {</span>
+    
+    private static BufferedReader br;
+    private static File archivo;
+    private static FileReader fr;
+    
+    public static void leerArchivo(File nombreArchivo) throws IOException, FileNotFoundException {
+<span class="nc" id="L16">        archivo = nombreArchivo;</span>
+<span class="nc" id="L17">        fr = new FileReader(archivo);</span>
+<span class="nc" id="L18">        br = new BufferedReader(fr);</span>
+<span class="nc" id="L19">    }</span>
+    
+    public static boolean hayMasLineas() throws IOException, FileNotFoundException {
+<span class="nc" id="L22">        return br.ready();</span>
+    }
+    
+    public static String linea() throws IOException {
+<span class="nc" id="L26">        return br.readLine();</span>
+    }
+    
+    public static void cerrar() throws IOException {
+<span class="nc" id="L30">        br.close();</span>
+<span class="nc" id="L31">        fr.close();</span>
+<span class="nc" id="L32">    }</span>
+    
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
