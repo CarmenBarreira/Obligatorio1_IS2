@@ -7,7 +7,8 @@ import edu.ncsu.monopoly.test.boardScenarios.GameBoardFull;
 
 public class Main {
 
-    public static void main(String[] args) {
+    
+    public static void main(String[] args) throws ClassNotFoundException {
         PlayerRecord p = new PlayerRecord();
         WelcomeWindow frame = new WelcomeWindow(p);
         frame.setVisible(true);

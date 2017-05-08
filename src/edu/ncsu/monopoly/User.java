@@ -7,7 +7,7 @@ public class User {
 	private String photo; 
 	private int gamesPlayed; 
 	private int gamesWon;
-        private Color chipColor;
+        private  Color chipColor;
 	
 	public User(){
 		name = "Sin nombre";
@@ -66,6 +66,16 @@ public class User {
 	public void setPhoto (String newPhoto){
 		photo = newPhoto;	
 	}
+
+
+    public void setGamesPlayed(int gamesPlayed) {
+        this.gamesPlayed = gamesPlayed;
+    }
+
+
+    public void setGamesWon(int gamesWon) {
+        this.gamesWon = gamesWon;
+    }
 	
 	
 }
